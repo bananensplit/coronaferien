@@ -1,0 +1,25 @@
+.quote {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-column-gap: 10px;
+}
+
+.author {
+    font-weight: bold;
+    grid-column: 1;
+}
+
+.statement {
+    grid-column: 2;
+}
+
+.context {
+    font-style: italic;
+    color: grey;
+    grid-column: 1 / 3;
+}
+
+.created {
+    font-size: smaller;
+    grid-column: 1 / 3;
+}
