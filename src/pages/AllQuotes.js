@@ -1,17 +1,26 @@
 import Quote from "../components/Quote";
 import Display from "../wrapers/Display";
+import { quotes } from "../Database";
 
 function AllQuotes(props) {
-    props.setPath('Zitate');
+  props.setPath("Zitate");
+  props.setBackto("/");
 
-    let quotesData = [];
+  function getData() {
+    return quotes;
+  }
 
-    function createQuotes() {
-        // return quotesData.map(value => <Quote statements={value.statements} created={value.created}/>);
-        return <Quote statements={quotesData[0].statements} created={quotesData[0].created}/>;
-    }
+  function createQuotes() {
+    return getData().map((value) => (
+      <Quote
+        key={value.id}
+        statements={value.statements}
+        created={value.created}
+      />
+    ));
+  }
 
-    return <Display>{createQuotes()}</Display>;
+  return <Display>{createQuotes()}</Display>;
 }
 
 export default AllQuotes;

@@ -1,0 +1,59 @@
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://www.earlygame.com/uploads/images/warzone-season-2-meta.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: var(--main-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: xx-large;
+  font-weight: 900;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: max-content;
+
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  box-shadow: 2px 2px 15px 0 grey;
+  background: rgba(255, 255, 255, 0.99);
+}
+
+.container > * {
+  margin: 10px 0;
+}
+
+.input,
+.label {
+  font-size: initial;
+}
+
+.submitbtn {
+  border: none;
+  background: rgb(0, 179, 255);
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0 grey;
+  color: #ffffff;
+  font-size: large;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submitbtn:hover {
+  transform: scale(1.05);
+  box-shadow: 15px 15px 20px 0 grey;
+}

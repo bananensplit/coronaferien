@@ -1,0 +1,72 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.window {
+  padding: 20px;
+  background: white;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  width: 50vw;
+  min-width: 275px;
+  max-width: 1000px;
+}
+
+.cancelbtn {
+  background: rgb(247, 74, 54);
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+
+  position: absolute;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+}
+
+.backdrop-trans-enter {
+  background: rgba(0, 0, 0, 0);
+}
+
+.backdrop-trans-enter-active {
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
+}
+
+.backdrop-trans-exit {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.backdrop-trans-exit-active {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+
+.window-trans-enter {
+  top: -50vh;
+}
+
+.window-trans-enter-active {
+  top: 50vh;
+  transition: 0.3s;
+}
+
+.window-trans-exit {
+  top: 50vh;
+}
+
+.window-trans-exit-active {
+  top: -50vh;
+  transition: 0.3s;
+}
