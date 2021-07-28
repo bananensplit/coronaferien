@@ -1,0 +1,17 @@
+.changepage-enter {
+  opacity: 0;
+}
+
+.changepage-enter-active {
+  opacity: 1;
+  transition: 500ms;
+}
+
+.changepage-exit {
+  opacity: 1;
+}
+
+.changepage-exit-active {
+  opacity: 0;
+  transition: 500ms;
+}
